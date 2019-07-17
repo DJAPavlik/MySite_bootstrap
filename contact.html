@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact Dennis Pavlik</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="description" content="Contact programmer">
+        <meta name="keywords" content="contact, awesome, programmer, geek squad, robots, jobs
+        ">
+        <link rel="shortcut icon" href="./MyPic.jpeg" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+   <!--     <link rel="stylesheet" type="text/css" href="./dist/css/contact.css"> -->
+    </head>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"> <img src="MyPic.jpeg" width="30" height="30" class="d-inline-block align-top" alt="">
+            Dennis Pavlik</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="resume.html">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  
+  
+
+
+
+    <body>
+        <header>
+
+        </header>
+        <form action="https://formspree.io/DJAPavlik@gmail.com" method="POST">  
+          
+        <main>
+            <h4>I appreciate your visit to my page.  
+                </br></br>I am always open to comments, compliments or conversation. 
+                </br>Fill-in the form and click "Send".
+                </br></br>Thanks
+            </h4>
+            <section id="prompts">
+            
+                <label for="name">Name</label>
+                <input id="name" type="text" name="name">
+                <p id="errName"> </p>
+           
+                <label for="email">Email</label>
+                <input id="email" type="text" name="_replyto">
+                <p id="errEmail"> </p>   
+
+                <p>Message</p>
+                <textarea id="message" name="message"></textarea>
+                <p id="errMsg"> </p>
+            </section>
+            <div>
+                <input type="hidden" name="_subject" value="New submission!">
+            </div>
+
+            <div>
+                <button id="btnSubmit">Send</button>
+            </div>
+            <input type="text" name="_gotcha" style="display:none">
+            <input type="hidden" name="_next" value="https://DJAPavlik.github.io/thanks">
+        </main>
+        </form>
+        <script>
+/* --   TEST VERSION TO INSURE ALL FIELDS ARE FILLED 
+
+                var btn = document.getElementById('btnSubmit');
+                // var nav = document.querySelector('nav');
+                btn.addEventListener(
+                  'click',
+                  function(){
+
+                    console.log("In CLICK!!!");
+                    
+                    var name = document.getElementById('name').value.trim();
+                    var email = document.getElementById("email").value.trim();
+                    var msg = document.getElementById("message").value.trim();
+
+                    
+                    document.getElementById("errName").innerHTML ='';
+                    document.getElementById("errEmail").innerHTML='';
+                    document.getElementById("errMsg").innerHTML='';
+
+                    if (name === "" || email === "" || msg === "" ) 
+                      {
+                          if (name === "")
+                            { document.getElementById("errName").innerHTML = "Name Required";}
+                          console.log("One of them is blank");
+                      }
+                    else
+                      {
+                          console.log("All are OKAY!!!");
+                      }
+
+
+                  
+                  }
+                );
+
+-- END TEST VERSION FOR ALL Fields filled */
+                var nav = document.querySelector('nav');
+                toggleMenu.addEventListener(
+                  'click',
+                  function(){
+
+                    
+                    if(nav.style.display=='block'){
+                      nav.style.display='none';
+                    }else{
+                      nav.style.display='block';
+                    }
+                  }
+                );
+        </script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    </body>
+</html>
